@@ -1,0 +1,28 @@
+package thread.communication.wait_notify.test2;
+
+/**
+ * @author zhangwei
+ * @Description:
+ * @date 2020-05-07 14:30
+ */
+public class MyThread1 extends Thread{
+    private Object lock;
+
+    public MyThread1(Object lock) {
+        super();
+        this.lock = lock;
+    }
+
+    @Override
+    public void run(){
+        try {
+            synchronized (lock){
+                System.out.println("开始wait  "+System.currentTimeMillis());
+                lock.wait();
+                System.out.println("结束wait  "+System.currentTimeMillis());
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
