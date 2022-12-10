@@ -11,7 +11,7 @@
     <!-- 自定义属性 -->
     <properties>
         <java_version>1.8</java_version>
-        <spring-version>4.3.6.RELEASE</spring-version>
+        <spring-version>6.0.0</spring-version>
         <rocketmq_version>3.2.6</rocketmq_version>
         <elastic-job_version>2.1.2</elastic-job_version>
     </properties>
